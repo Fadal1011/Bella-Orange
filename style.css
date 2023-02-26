@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+:root{
+    --orange:rgb(255, 77, 0);
+    --white:white;
+    --black:black;
+    --linear-gradient:linear-gradient(rgba(0, 0, 0, 0.485),rgba(0, 0, 0, 0.519));
+    --flex:flex;
+    --white_sombre:#f9f9f9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 5rem 89fr 1fr 5rem;
+    align-items: center;
+    background: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 999999999999999999999999999999999;
+    
+}
+
+.header .logo{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1rem;
+    
+}
+
+.header .logo .img{
+    width: 12rem;
+    display: flex;
+    flex-basis: 6rem;
+    background: url(Logo.png);
+    background-size: cover;
+}
+
+.header .nav{
+    display: flex;
+    gap: 4rem;
+    font-size: 1.5rem;
+}
+.header .hamburger{
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+}
+.header .hamburger div{
+    width: 2rem;
+    border: solid var(--black) .1rem;
+}
+
+/* ************************************************************************************ */
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background:var(--linear-gradient) ,url(baniere.jpeg);
+    background-size: cover;
+    gap: 6rem;
+    padding: 0 .5rem;
+    color: var(--white);
+}
+.presentation > div:nth-child(2){
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.presentation > div:nth-child(3){
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.presentation > div:nth-child(4){
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+.presentation > .button{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-basis: 4rem;
+    position: relative;
+}
+
+.presentation > .button > div:nth-child(1),
+.presentation > .button > div:nth-child(2){
+    width: 12rem;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 2rem; 
+    border: solid .1rem white;
+}
+
+.presentation > .button > div:nth-child(1){
+    background: var(--orange);
+    border: none;
+}
+
+.presentation .button > div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+.presentation .button > div:nth-child(3) > div{
+   width: 40rem;
+   background: url(2telephones.png);
+   background-size: cover;
+   display: flex;
+   flex-direction: column;
+   flex-basis: 50rem;
+   position: relative;
+}
+
+.presentation .margin{
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation .margin div{
+    display: flex;
+    flex-basis: 10rem;
+}
+
+.hauteur{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.hauteur div{
+    display: flex;
+    flex-basis: 45rem;
+}
+
+.trait{
+    width: 40%;
+    border: solid .1rem var(--black);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.part2{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 5rem;
+}
+
+.part2 .title{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.part2 .box,.part3 .box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 6rem;
+}
+
+.part2 .box .form,.part3 .box .form{
+    display: flex;
+    flex-direction: column;
+}
+
+.part2 .box .form .img,.part3 .box .form .img{
+    width: 25rem;
+     display: flex;
+     flex-basis: 45rem;
+     background: url(RectangleImg3.png);
+}
+
+.part2 .box .text,.part3 .box .text{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 2rem;
+}
+
+.part2 .box .text .h2,.part3 .box .text .h2{
+color: var(--orange);
+font-size: 2rem;
+}
+
+.part2 .box .text .h1,.part3 .box .text .h1{
+    font-size: 3.2rem;
+}
+
+.part2 .box .text .h3,.part3 .box .text .h3{
+    font-size: 1.8rem;
+    color: gray;
+}
+
+.foot{
+    block-size: 15vh;
+    display: flex;
+    flex-direction: column;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 4rem;
+}
+
+.footer .logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .logo .img{
+    width: 12rem;
+    background: url(Logo.png);
+    background-size: cover;
+    flex-basis: 6rem;   
+}
+.footer .icon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: var(--orange);
+    font-size: 3rem;
+}
+
+.copyright{
+    font-size: 2rem;
+}
+
+.portable{
+    width: 23rem;
+    background:var(--white_sombre);
+    border-radius: 3rem;
+    padding: 1rem;
+    position: relative;
+    box-shadow: 1rem 1rem 1rem var(--black);
+}
+
+.portable .body{
+    background: #f1f1f4;
+    padding-bottom: 1rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.portable .entete{
+    background:var(--white_sombre);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.portable .entete .capt{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.portable .entete .capt .ecoute{
+    width: 3.5rem;
+    border-top: solid .2em rgb(101, 101, 101);
+    block-size: .4rem;
+    border-radius: 1rem;
+}
+
+.portable .entete .capt .camera{
+    width: .5rem;
+    border: solid .2rem rgb(111, 110, 110);
+    block-size: .5rem;
+    border-radius: 1rem;
+}
+
+.portable .entete .logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.portable .entete .logo .img{
+    width:7rem;
+    display: flex;
+    margin:1rem auto;
+    background: url(lo.png);
+    flex-basis: 8rem;
+    background-size: cover;
+}
+
+.portable .entete .action{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+.portable .entete .action .login{
+    border-bottom: solid 2px var(--orange);
+    padding: 0 1.5rem .5rem;
+}
+
+.portable .form{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.portable .email{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    border-bottom: solid .1rem var(--black);
+}
+.portable .title{
+    font-size: .8rem;
+    text-align: left;
+   color: rgb(78, 78, 78); 
+}
+.portable .inf{
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.portable .button{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+.portable .button .login{
+    width: 14rem;
+    background: var(--orange);
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+    block-size: 3rem;
+}
+
+.body .forget{
+    color: var(--orange);
+    font-weight: bold;
+}
+.portable .button2{
+    position: absolute;
+    top: 10%;
+    left: -1%;
+}
+.portable .button2 .gauche{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.portable .button2 .gauche .b1,.portable .button2 .gauche .b2{
+      width: .3rem;
+      block-size: 3rem;
+      background: var(--white);
+      border-radius: .5rem;
+      box-shadow: 0rem .1rem .1rem 0rem var(--black);
+      border-right: var(--white_sombre);
+}
+.portable .button2 .gauche .b2{
+    block-size: 2rem;
+}
+
+
+
+/* ******************************* */
+
+.portable .button3{
+    position: absolute;
+    top: 15%;
+    right: -1%;
+}
+.portable .button3 .droit{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.portable .button3 .droit div{
+      width: .5rem;
+      block-size: 7rem;
+      background: var(--white);
+      border-radius: .5rem;
+     box-shadow: .1rem .1rem .1rem 0rem var(--black);
+     border-left: var(--white_sombre);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:700px){
+    header{
+        grid-template-columns: 1rem 1fr 2fr 1rem;
+    }
+
+    .header .nav{
+        display: none;
+    }
+    .header .hamburger{
+        display: flex;
+    }
+  
+    .presentation{
+        color: black;
+        background:rgb(247, 247, 247);
+    }
+
+    .presentation > div:nth-child(3){
+        font-size: 3em;
+    }
+
+    .presentation > .button{
+        flex-direction: column;
+        align-items: center;
+        flex-basis: 6rem;
+    }
+
+.presentation > .button > div:nth-child(2){
+    width: 12rem;
+    color: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    border-radius: 2rem; 
+    border: solid .1rem var(--orange);
+    block-size: 4rem;
+}
+
+.presentation > .button > div:nth-child(1){
+    block-size: 4rem;
+}
+
+.presentation .button > div:nth-child(3){
+    top: 10%;
+    left: 40%;
+}
+.trait{
+    width: 100%;
+}
+.part2,.part3 {
+    text-align: center;
+}
+
+.part2 .box{
+  flex-direction: column-reverse;
+  gap: 1rem;
+
+}
+
+.part3 .box{
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer .logo{
+    display: none;
+}
+
+.footer .logo .img{
+    width: 12rem;
+    background: url(Logo.png);
+    background-size: cover;
+    flex-basis: 6rem;   
+}
+
+.copyright{
+    text-align: center;
+}
+
+.portable .form{
+    text-align: left;
+}
+
+.hauteur div{
+    display: flex;
+    flex-basis: 25rem;
+}
+
+
+
+
+}
+
+
+
+
+
+@media(max-width:530px){
+
+    .presentation .button > div:nth-child(3){
+        top: 60%;
+ 
+    }
+
+    .presentation .button > div:nth-child(3) > div{
+        width: 30rem;
+        flex-basis: 40rem;
+     }
+}
