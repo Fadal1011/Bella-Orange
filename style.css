@@ -55,6 +55,10 @@ body{
     gap: 4rem;
     font-size: 1.5rem;
 }
+.header .nav .active{
+    color: var(--orange);
+    font-weight: bold;
+}
 .header .hamburger{
     display: none;
     flex-direction: column;
