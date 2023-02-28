@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 :root{
     --orange:rgb(255, 77, 0);
     --white:white;
@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
@@ -267,7 +267,7 @@ font-size: 2rem;
     border-radius: 3rem;
     padding: 1rem;
     position: relative;
-    box-shadow: 1rem 1rem 1rem var(--black);
+    box-shadow: 6rem 2rem 7rem rgba(0, 0, 0, 0.237);
 }
 
 .portable .body{
@@ -343,7 +343,7 @@ font-size: 2rem;
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    border-bottom: solid .1rem var(--black);
+    border-bottom: solid .1rem black;
 }
 .portable .title{
     font-size: .8rem;
